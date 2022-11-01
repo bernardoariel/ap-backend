@@ -20,7 +20,7 @@ import com.bolsadeideas.springboot.app.models.services.ITrabajoService;
 
 
 
-@CrossOrigin(origins = {"http://localhost:4200"})
+@CrossOrigin(origins = {"**"})
 @RestController
 @RequestMapping("/")
 public class TrabajoRestController {

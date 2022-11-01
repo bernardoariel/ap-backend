@@ -18,7 +18,7 @@ import org.springframework.web.bind.annotation.RestController;
 import com.bolsadeideas.springboot.app.models.entity.Porfolio;
 import com.bolsadeideas.springboot.app.models.services.IPorfolioService;
 
-@CrossOrigin(origins = {"http://localhost:4200"})
+@CrossOrigin(origins = {"**"})
 @RestController
 @RequestMapping("/")
 public class PorfolioRestController {
