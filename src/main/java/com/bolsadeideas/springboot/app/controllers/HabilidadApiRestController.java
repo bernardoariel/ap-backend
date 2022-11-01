@@ -47,13 +47,13 @@ public class HabilidadApiRestController {
 
     @PutMapping("/habilidad/{id}")
     @ResponseStatus(HttpStatus.CREATED)
-    public Habilidad update (@RequestBody Habilidad porfolio,@PathVariable Long id){
+    public Habilidad update (@RequestBody Habilidad habilidad,@PathVariable Long id){
 
         Habilidad habilidadActual = habilidadService.findById(id);
 
-        habilidadActual.setNombre(porfolio.getNombre());
-        habilidadActual.setPorcerntaje(porfolio.getPorcerntaje());
-        habilidadActual.setDescripcion(porfolio.getDescripcion());
+        habilidadActual.setNombre(habilidad.getNombre());
+        habilidadActual.setPorcentaje(habilidad.getPorcentaje());
+        habilidadActual.setDescripcion(habilidad.getDescripcion());
 
         return habilidadService.save(habilidadActual);
 

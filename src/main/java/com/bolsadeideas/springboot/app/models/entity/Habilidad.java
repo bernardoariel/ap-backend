@@ -18,7 +18,7 @@ public class Habilidad implements Serializable{
 
     String nombre;
     String descripcion;
-    Integer porcerntaje;
+    Integer porcentaje;
  
     public Long getId() {
         return id;
@@ -44,12 +44,12 @@ public class Habilidad implements Serializable{
         this.descripcion = descripcion;
     }
 
-    public Integer getPorcerntaje() {
-        return porcerntaje;
+    public Integer getPorcentaje() {
+        return porcentaje;
     }
 
-    public void setPorcerntaje(Integer porcerntaje) {
-        this.porcerntaje = porcerntaje;
+    public void setPorcentaje(Integer porcentaje) {
+        this.porcentaje = porcentaje;
     }
 
     public static long getSerialversionuid() {
